@@ -1,183 +1,185 @@
-C:\Users\xyh\anaconda3\envs\hologpu\python.exe E:\DymicModel\AI怪波碰撞\nlse_optimizer_9d.py 
+C:\Users\Administrator\anaconda3\envs\hologpu\python.exe D:\hologpu\clsc_wide_bounds.py 
+C:\Users\Administrator\anaconda3\envs\hologpu\Lib\site-packages\hyperopt\atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
 ================================================================================
 Running 9D Optimization (seed=42, max_iter=100)
 ================================================================================
 ------------------------------------------------------------
 📌 Starting 9D Bayesian Optimization (max_iter=100)
    [9D Bounds] A∈(0.2, 2.5), f∈(0.05, 0.7), φ∈(0, 6.283185307179586), α∈(0.05, 1.5), β∈(0.7, 2.8), γ_ext∈(0.5, 2.0), δ∈(1e-06, 0.005), ω₀∈(-0.4, 0.4)
-   ✓ 9D GP uncertainty extracted for (A,f) slice
-   ✓ Fixed params: φ=6.28, α=0.41, β=2.80, γ_ext=0.50, δ=0.0000, ω₀=0.388, σ=5.00
+   [OK] 9D GP uncertainty extracted for (A,f) slice
+   [OK] Fixed params: φ=0.00, α=0.43, β=2.02, γ_ext=0.64, δ=0.0000, ω₀=-0.400, σ=5.00
 [BO] Iter  10/100 | Progress:  10.0% | Current Score:   0.0125 | Best Score:   0.1122 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 1.234,  0.112,  2.330,  1.020,  2.098,  1.387,  0.001,  0.049, 14.573)
-      → Energy Loss Rate: 0.0213, Energy Conservation: 0.9787
+      -> Energy Loss Rate: 0.0213, Energy Conservation: 0.9787
 [BO] Iter  20/100 | Progress:  20.0% | Current Score:   0.0147 | Best Score:   0.1122 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 1.836,  0.576,  2.191,  0.189,  2.675,  1.096,  0.003,  0.270, 21.892)
-      → Energy Loss Rate: 0.0724, Energy Conservation: 0.9276
+      -> Energy Loss Rate: 0.0724, Energy Conservation: 0.9276
 [BO] Iter  30/100 | Progress:  30.0% | Current Score:   0.0075 | Best Score:   0.2270 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 0.454,  0.152,  5.988,  0.147,  1.793,  0.803,  0.001, -0.382, 28.775)
-      → Energy Loss Rate: 0.0038, Energy Conservation: 0.9962
-[BO] Iter  40/100 | Progress:  40.0% | Current Score:   0.3077 | Best Score:   0.4135 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 1.066,  0.452,  0.000,  0.220,  2.401,  0.500,  0.000, -0.400,  5.000)
-      → Energy Loss Rate: 0.0000, Energy Conservation: 1.0000
-[BO] Iter  50/100 | Progress:  50.0% | Current Score:   0.4318 | Best Score:   0.4558 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 0.825,  0.700,  0.000,  0.472,  1.989,  0.500,  0.004, -0.400,  5.000)
-      → Energy Loss Rate: 0.0618, Energy Conservation: 0.9382
-[BO] Iter  60/100 | Progress:  60.0% | Current Score:   0.0125 | Best Score:   0.4558 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 1.061,  0.099,  1.884,  0.949,  0.966,  0.500,  0.002, -0.400,  5.000)
-      → Energy Loss Rate: 0.0413, Energy Conservation: 0.9587
-[BO] Iter  70/100 | Progress:  70.0% | Current Score:   0.3827 | Best Score:   0.4710 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 0.582,  0.492,  5.543,  0.782,  1.983,  0.737,  0.000, -0.102,  5.000)
-      → Energy Loss Rate: 0.0034, Energy Conservation: 0.9966
-[BO] Iter  80/100 | Progress:  80.0% | Current Score:   0.2399 | Best Score:   0.4849 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 1.078,  0.684,  4.488,  1.377,  1.775,  0.500,  0.004,  0.236,  5.000)
-      → Energy Loss Rate: 0.0719, Energy Conservation: 0.9281
-[BO] Iter  90/100 | Progress:  90.0% | Current Score:   0.0126 | Best Score:   0.4849 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 1.165,  0.693,  5.943,  0.937,  0.811,  1.990,  0.002,  0.304, 28.393)
-      → Energy Loss Rate: 0.0391, Energy Conservation: 0.9609
-[BO] Iter 100/100 | Progress: 100.0% | Current Score:   0.3950 | Best Score:   0.4849 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 0.560,  0.652,  0.616,  0.478,  1.450,  0.696,  0.002,  0.058,  5.000)
-      → Energy Loss Rate: 0.0121, Energy Conservation: 0.9879
-✅ 9D BO Completed | Best Score: 0.4849 | Best Params: A=0.951, f=0.700, φ=6.283, α=0.410, β=2.800, γ_ext=0.500, δ=0.0000, ω₀=0.388
-   → Avg Energy Loss Rate: 0.0319
-   → 9D Uncertainty: Mean σ=0.133, Max σ=0.133
+      -> Energy Loss Rate: 0.0038, Energy Conservation: 0.9962
+[BO] Iter  40/100 | Progress:  40.0% | Current Score:   0.0215 | Best Score:   0.3993 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 1.013,  0.391,  0.105,  1.312,  1.081,  0.972,  0.000, -0.381, 14.039)
+      -> Energy Loss Rate: 0.0028, Energy Conservation: 0.9972
+[BO] Iter  50/100 | Progress:  50.0% | Current Score:   0.1843 | Best Score:   0.3993 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 0.558,  0.365,  0.302,  0.382,  2.327,  1.697,  0.001, -0.315,  5.627)
+      -> Energy Loss Rate: 0.0130, Energy Conservation: 0.9870
+[BO] Iter  60/100 | Progress:  60.0% | Current Score:   0.0279 | Best Score:   0.3993 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 0.967,  0.216,  0.000,  0.450,  2.086,  1.529,  0.001, -0.385,  5.136)
+      -> Energy Loss Rate: 0.0123, Energy Conservation: 0.9877
+[BO] Iter  70/100 | Progress:  70.0% | Current Score:   0.0071 | Best Score:   0.3993 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 0.226,  0.055,  5.133,  0.347,  0.762,  1.720,  0.002,  0.046, 16.883)
+      -> Energy Loss Rate: 0.0045, Energy Conservation: 0.9955
+[BO] Iter  80/100 | Progress:  80.0% | Current Score:   0.0019 | Best Score:   0.3993 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 2.484,  0.681,  3.618,  0.093,  2.607,  1.778,  0.005,  0.212, 14.719)
+      -> Energy Loss Rate: 0.1688, Energy Conservation: 0.8312
+[BO] Iter  90/100 | Progress:  90.0% | Current Score:   0.0049 | Best Score:   0.3993 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 0.247,  0.080,  1.160,  1.093,  0.727,  1.385,  0.000, -0.036, 29.857)
+      -> Energy Loss Rate: 0.0015, Energy Conservation: 0.9985
+[BO] Iter 100/100 | Progress: 100.0% | Current Score:   0.0010 | Best Score:   0.3993 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 2.465,  0.069,  5.073,  0.643,  1.531,  1.726,  0.005, -0.355, 29.169)
+      -> Energy Loss Rate: 0.1955, Energy Conservation: 0.8045
+✅ 9D BO Completed | Best Score: 0.3993 | Best Params: A=0.618, f=0.489, φ=0.000, α=0.434, β=2.017, γ_ext=0.637, δ=0.0000, ω₀=-0.400
+   -> Avg Energy Loss Rate: 0.0321
+   -> 9D Uncertainty: Mean σ=0.052, Max σ=0.052
 ------------------------------------------------------------
 📌 Starting 9D CMA-ES (max_iter=100)
 [CMAES] Iter  10/100 | Progress:  10.0% | Current Score:   0.0309 | Best Score:   0.0309 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 1.756,  0.690,  2.777,  0.903,  1.490,  1.664,  0.000,  0.171,  9.533)
       CMA-ES status: σ=0.2332, cond(C)=5.0e+00
-      → Energy Loss Rate: 0.0004, Energy Conservation: 0.9996
+      -> Energy Loss Rate: 0.0004, Energy Conservation: 0.9996
 [CMAES] Iter  20/100 | Progress:  20.0% | Current Score:   0.1502 | Best Score:   0.1502 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 2.462,  0.630,  0.534,  0.869,  1.009,  1.984,  0.001,  0.076,  8.357)
       CMA-ES status: σ=0.3944, cond(C)=2.4e+01
-      → Energy Loss Rate: 0.0369, Energy Conservation: 0.9631
+      -> Energy Loss Rate: 0.0369, Energy Conservation: 0.9631
 [CMAES] Iter  30/100 | Progress:  30.0% | Current Score:   0.1750 | Best Score:   0.1750 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 2.398,  0.313,  0.691,  1.492,  1.072,  1.954,  0.000, -0.196,  7.971)
       CMA-ES status: σ=0.3750, cond(C)=3.7e+01
-      → Energy Loss Rate: 0.0000, Energy Conservation: 1.0000
+      -> Energy Loss Rate: 0.0000, Energy Conservation: 1.0000
 [CMAES] Iter  40/100 | Progress:  40.0% | Current Score:   0.1850 | Best Score:   0.1850 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 2.499,  0.448,  0.218,  1.466,  0.728,  1.670,  0.001, -0.398,  7.363)
       CMA-ES status: σ=0.4076, cond(C)=3.7e+01
-      → Energy Loss Rate: 0.0232, Energy Conservation: 0.9768
+      -> Energy Loss Rate: 0.0232, Energy Conservation: 0.9768
 [CMAES] Iter  50/100 | Progress:  50.0% | Current Score:   0.2268 | Best Score:   0.2268 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 2.455,  0.559,  0.109,  1.214,  0.845,  1.789,  0.000,  0.030,  6.279)
       CMA-ES status: σ=0.3472, cond(C)=3.2e+01
-      → Energy Loss Rate: 0.0076, Energy Conservation: 0.9924
+      -> Energy Loss Rate: 0.0076, Energy Conservation: 0.9924
 [CMAES] Iter  60/100 | Progress:  60.0% | Current Score:   0.2657 | Best Score:   0.2657 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 2.450,  0.668,  0.074,  1.493,  0.724,  1.847,  0.000, -0.397,  5.155)
       CMA-ES status: σ=0.2975, cond(C)=3.0e+01
-      → Energy Loss Rate: 0.0038, Energy Conservation: 0.9962
+      -> Energy Loss Rate: 0.0038, Energy Conservation: 0.9962
 [CMAES] Iter  70/100 | Progress:  70.0% | Current Score:   0.2657 | Best Score:   0.2657 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 2.450,  0.668,  0.074,  1.493,  0.724,  1.847,  0.000, -0.397,  5.155)
       CMA-ES status: σ=0.1593, cond(C)=3.7e+01
-      → Energy Loss Rate: 0.0038, Energy Conservation: 0.9962
+      -> Energy Loss Rate: 0.0038, Energy Conservation: 0.9962
 [CMAES] Iter  80/100 | Progress:  80.0% | Current Score:   0.2657 | Best Score:   0.2657 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 2.450,  0.668,  0.074,  1.493,  0.724,  1.847,  0.000, -0.397,  5.155)
       CMA-ES status: σ=0.1108, cond(C)=4.9e+01
-      → Energy Loss Rate: 0.0038, Energy Conservation: 0.9962
+      -> Energy Loss Rate: 0.0038, Energy Conservation: 0.9962
 [CMAES] Iter  90/100 | Progress:  90.0% | Current Score:   0.2657 | Best Score:   0.2657 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 2.450,  0.668,  0.074,  1.493,  0.724,  1.847,  0.000, -0.397,  5.155)
       CMA-ES status: σ=0.1383, cond(C)=6.6e+01
-      → Energy Loss Rate: 0.0038, Energy Conservation: 0.9962
+      -> Energy Loss Rate: 0.0038, Energy Conservation: 0.9962
 [CMAES] Iter 100/100 | Progress: 100.0% | Current Score:   0.2845 | Best Score:   0.2845 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 2.461,  0.612,  0.011,  1.483,  0.744,  1.993,  0.000, -0.207,  5.069)
       CMA-ES status: σ=0.0903, cond(C)=1.2e+02
-      → Energy Loss Rate: 0.0073, Energy Conservation: 0.9927
+      -> Energy Loss Rate: 0.0073, Energy Conservation: 0.9927
 ✅ 9D CMA-ES Completed | Best Score: 0.2845 | Best Params: A=2.461, f=0.612, φ=0.011, α=1.483, β=0.744, γ_ext=1.993, δ=0.0002, ω₀=-0.207
-   → Avg Energy Loss Rate: 0.0080
+   -> Avg Energy Loss Rate: 0.0080
 ------------------------------------------------------------
 📌 Starting 9D TPE (max_iter=100)
-[TPE] Iter  10/100 | Progress:  10.0% | Current Score:   0.0197 | Best Score:   0.0273 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 0.900,  0.210,  4.942,  1.290,  1.098,  1.798,  0.002, -0.143, 10.252)
-      → Energy Loss Rate: 0.0202, Energy Conservation: 0.9798
-[TPE] Iter  20/100 | Progress:  20.0% | Current Score:   0.0174 | Best Score:   0.0719 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 1.700,  0.271,  1.332,  1.247,  1.123,  0.932,  0.000, -0.136, 17.979)
-      → Energy Loss Rate: 0.0034, Energy Conservation: 0.9966
-[TPE] Iter  30/100 | Progress:  30.0% | Current Score:   0.0180 | Best Score:   0.1152 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 1.200,  0.651,  2.667,  1.494,  2.573,  1.981,  0.001,  0.097, 16.479)
-      → Energy Loss Rate: 0.0136, Energy Conservation: 0.9864
-[TPE] Iter  40/100 | Progress:  40.0% | Current Score:   0.0346 | Best Score:   0.1152 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 1.000,  0.399,  0.966,  1.294,  1.705,  1.746,  0.002,  0.195,  6.983)
-      → Energy Loss Rate: 0.0293, Energy Conservation: 0.9707
-[TPE] Iter  50/100 | Progress:  50.0% | Current Score:   0.0168 | Best Score:   0.1152 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 0.900,  0.565,  0.518,  0.747,  1.793,  1.993,  0.000, -0.229, 17.158)
-      → Energy Loss Rate: 0.0002, Energy Conservation: 0.9998
-[TPE] Iter  60/100 | Progress:  60.0% | Current Score:   0.0284 | Best Score:   0.1308 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 2.500,  0.128,  4.923,  0.244,  2.624,  0.814,  0.000,  0.161,  5.051)
-      → Energy Loss Rate: 0.0003, Energy Conservation: 0.9997
-[TPE] Iter  70/100 | Progress:  70.0% | Current Score:   0.0765 | Best Score:   0.1417 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 0.500,  0.148,  4.424,  0.289,  2.405,  1.091,  0.000,  0.295,  8.576)
-      → Energy Loss Rate: 0.0026, Energy Conservation: 0.9974
-[TPE] Iter  80/100 | Progress:  80.0% | Current Score:   0.0181 | Best Score:   0.1417 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 1.200,  0.125,  5.422,  0.408,  1.875,  1.136,  0.002,  0.278,  7.844)
-      → Energy Loss Rate: 0.0313, Energy Conservation: 0.9687
-[TPE] Iter  90/100 | Progress:  90.0% | Current Score:   0.0193 | Best Score:   0.1417 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 0.600,  0.321,  0.045,  0.297,  2.437,  0.766,  0.000,  0.395, 12.446)
-      → Energy Loss Rate: 0.0016, Energy Conservation: 0.9984
-[TPE] Iter 100/100 | Progress: 100.0% | Current Score:   0.0136 | Best Score:   0.2611 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 1.900,  0.440,  3.441,  0.507,  0.998,  0.826,  0.000,  0.158, 27.847)
-      → Energy Loss Rate: 0.0095, Energy Conservation: 0.9905
-✅ 9D TPE Completed | Best Score: 0.2611 | Best Params: A=0.900, f=0.438, φ=4.773, α=0.590, β=2.210, γ_ext=0.708, δ=0.0001, ω₀=0.193, σ=5.02
-   → Avg Energy Loss Rate: 0.0082
+[TPE] Iter  10/100 | Progress:  10.0% | Current Score:   0.0147 | Best Score:   0.0221 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 1.400,  0.506,  5.736,  0.352,  1.557,  0.694,  0.000, -0.253, 22.284)
+      -> Energy Loss Rate: 0.0008, Energy Conservation: 0.9992
+[TPE] Iter  20/100 | Progress:  20.0% | Current Score:   0.0243 | Best Score:   0.0243 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 2.000,  0.565,  0.273,  0.376,  0.836,  1.427,  0.001, -0.292, 14.353)
+      -> Energy Loss Rate: 0.0167, Energy Conservation: 0.9833
+[TPE] Iter  30/100 | Progress:  30.0% | Current Score:   0.0083 | Best Score:   0.0497 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 0.300,  0.403,  0.655,  0.288,  1.350,  1.174,  0.000, -0.072,  5.092)
+      -> Energy Loss Rate: 0.0000, Energy Conservation: 1.0000
+[TPE] Iter  40/100 | Progress:  40.0% | Current Score:   0.0429 | Best Score:   0.0497 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 2.500,  0.592,  1.864,  0.853,  1.671,  0.860,  0.000, -0.046,  6.272)
+      -> Energy Loss Rate: 0.0003, Energy Conservation: 0.9997
+[TPE] Iter  50/100 | Progress:  50.0% | Current Score:   0.0303 | Best Score:   0.1003 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 0.700,  0.208,  5.348,  0.972,  2.468,  0.631,  0.002, -0.128, 10.349)
+      -> Energy Loss Rate: 0.0229, Energy Conservation: 0.9771
+[TPE] Iter  60/100 | Progress:  60.0% | Current Score:   0.0154 | Best Score:   0.1003 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 1.100,  0.117,  5.125,  1.488,  1.894,  0.921,  0.000, -0.230,  9.982)
+      -> Energy Loss Rate: 0.0076, Energy Conservation: 0.9924
+[TPE] Iter  70/100 | Progress:  70.0% | Current Score:   0.1598 | Best Score:   0.1712 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 0.800,  0.192,  5.975,  1.105,  2.648,  0.634,  0.003, -0.063,  6.245)
+      -> Energy Loss Rate: 0.0334, Energy Conservation: 0.9666
+[TPE] Iter  80/100 | Progress:  80.0% | Current Score:   0.0192 | Best Score:   0.1765 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 0.900,  0.395,  3.704,  1.381,  1.844,  0.728,  0.001,  0.186, 10.999)
+      -> Energy Loss Rate: 0.0116, Energy Conservation: 0.9884
+[TPE] Iter  90/100 | Progress:  90.0% | Current Score:   0.0410 | Best Score:   0.1765 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 0.800,  0.069,  5.289,  1.499,  1.401,  0.864,  0.005, -0.000,  5.692)
+      -> Energy Loss Rate: 0.0470, Energy Conservation: 0.9530
+[TPE] Iter 100/100 | Progress: 100.0% | Current Score:   0.0000 | Best Score:   0.1765 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 0.300,  0.359,  6.280,  1.180,  2.394,  0.532,  0.001, -0.158,  7.233)
+      -> Energy Loss Rate: 0.0055, Energy Conservation: 0.9945
+✅ 9D TPE Completed | Best Score: 0.1765 | Best Params: A=0.700, f=0.236, φ=6.067, α=1.326, β=2.074, γ_ext=0.586, δ=0.0021, ω₀=0.070, σ=6.41
+   -> Avg Energy Loss Rate: 0.0169
 ------------------------------------------------------------
 📌 Starting 9D Random Search (max_iter=100)
 [RANDOM] Iter  10/100 | Progress:  10.0% | Current Score:   0.0263 | Best Score:   0.2310 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 1.706,  0.378,  4.570,  0.745,  1.303,  1.045,  0.004, -0.026, 10.336)
-      → Energy Loss Rate: 0.0902, Energy Conservation: 0.9098
+      -> Energy Loss Rate: 0.0902, Energy Conservation: 0.9098
 [RANDOM] Iter  20/100 | Progress:  20.0% | Current Score:   0.0017 | Best Score:   0.2310 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 1.588,  0.294,  2.219,  1.249,  0.720,  1.697,  0.003,  0.389, 19.736)
-      → Energy Loss Rate: 0.0756, Energy Conservation: 0.9244
+      -> Energy Loss Rate: 0.0756, Energy Conservation: 0.9244
 [RANDOM] Iter  30/100 | Progress:  30.0% | Current Score:   0.0120 | Best Score:   0.2310 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 1.263,  0.170,  1.921,  1.172,  1.653,  1.823,  0.001,  0.007, 21.174)
-      → Energy Loss Rate: 0.0113, Energy Conservation: 0.9887
+      -> Energy Loss Rate: 0.0113, Energy Conservation: 0.9887
 [RANDOM] Iter  40/100 | Progress:  40.0% | Current Score:   0.0012 | Best Score:   0.2310 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 1.815,  0.500,  2.886,  0.246,  1.361,  0.980,  0.004, -0.309, 25.727)
-      → Energy Loss Rate: 0.0998, Energy Conservation: 0.9002
+      -> Energy Loss Rate: 0.0998, Energy Conservation: 0.9002
 [RANDOM] Iter  50/100 | Progress:  50.0% | Current Score:   0.0012 | Best Score:   0.2310 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 1.442,  0.447,  6.269,  1.464,  2.729,  1.023,  0.005, -0.036, 26.296)
-      → Energy Loss Rate: 0.0888, Energy Conservation: 0.9112
+      -> Energy Loss Rate: 0.0888, Energy Conservation: 0.9112
 [RANDOM] Iter  60/100 | Progress:  60.0% | Current Score:   0.0147 | Best Score:   0.2310 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 0.700,  0.195,  1.728,  0.901,  2.085,  0.526,  0.001, -0.055, 13.299)
-      → Energy Loss Rate: 0.0107, Energy Conservation: 0.9893
+      -> Energy Loss Rate: 0.0107, Energy Conservation: 0.9893
 [RANDOM] Iter  70/100 | Progress:  70.0% | Current Score:   0.0445 | Best Score:   0.2310 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 2.200,  0.554,  3.959,  1.474,  2.140,  1.963,  0.000, -0.289, 16.286)
-      → Energy Loss Rate: 0.0098, Energy Conservation: 0.9902
+      -> Energy Loss Rate: 0.0098, Energy Conservation: 0.9902
 [RANDOM] Iter  80/100 | Progress:  80.0% | Current Score:   0.0119 | Best Score:   0.2310 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 1.950,  0.519,  5.681,  0.099,  1.640,  1.519,  0.000, -0.072, 28.554)
-      → Energy Loss Rate: 0.0120, Energy Conservation: 0.9880
+      -> Energy Loss Rate: 0.0120, Energy Conservation: 0.9880
 [RANDOM] Iter  90/100 | Progress:  90.0% | Current Score:   0.0145 | Best Score:   0.2310 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 1.757,  0.183,  3.885,  0.238,  0.704,  1.897,  0.003,  0.342, 13.346)
-      → Energy Loss Rate: 0.0785, Energy Conservation: 0.9215
+      -> Energy Loss Rate: 0.0785, Energy Conservation: 0.9215
 [RANDOM] Iter 100/100 | Progress: 100.0% | Current Score:   0.0108 | Best Score:   0.2310 | Params (A,f,φ,α,β,γ_ext,δ,ω₀): ( 1.267,  0.229,  1.131,  0.857,  2.470,  0.729,  0.000, -0.203, 29.493)
-      → Energy Loss Rate: 0.0030, Energy Conservation: 0.9970
+      -> Energy Loss Rate: 0.0030, Energy Conservation: 0.9970
 ✅ 9D Random Search Completed | Best Score: 0.2310 | Best Params: A=0.299, f=0.518, φ=5.985, α=0.433, β=0.884, γ_ext=1.213, δ=0.0043, ω₀=0.042
-   → Avg Energy Loss Rate: 0.0467
+   -> Avg Energy Loss Rate: 0.0467
 ================================================================================
-🔬 9D PARAMETER PHYSICAL INTERPRETATION
+[PHYSICS] 9D PARAMETER PHYSICAL INTERPRETATION
 ================================================================================
 Optimal 9D Parameters:
-   1. Amplitude modulation  (A_mod=0.951): Wave packet amplitude variation
-   2. Frequency modulation  (f_mod=0.700): Spatial periodicity of initial envelope
-   3. Initial phase         (phi0=6.283): Phase offset of modulation pattern
-   4. High-order nonlinearity (alpha=0.410): Quintic nonlinearity strength
-   5. Dispersion            (beta=2.800): Group velocity dispersion
-   6. Extended nonlinear gain (gamma_ext=0.500): Environmental correction factor
+   1. Amplitude modulation  (A_mod=0.618): Wave packet amplitude variation
+   2. Frequency modulation  (f_mod=0.489): Spatial periodicity of initial envelope
+   3. Initial phase         (phi0=0.000): Phase offset of modulation pattern
+   4. High-order nonlinearity (alpha=0.434): Quintic nonlinearity strength
+   5. Dispersion            (beta=2.017): Group velocity dispersion
+   6. Extended nonlinear gain (gamma_ext=0.637): Environmental correction factor
    7. Dissipation           (delta=0.0000): Energy loss rate (weak damping)
-   8. Frequency offset      (omega0=0.388): Carrier frequency shift from reference
+   8. Frequency offset      (omega0=-0.400): Carrier frequency shift from reference
 
 Characteristic Scales:
-   Dispersion length    L_D = 4.464
-   Nonlinear length     L_NL = 1.473
-   Soliton order        N = √(L_D/L_NL) = 1.74
-   Dissipation time     τ_δ = 16237.0 (vs T_sim=12)
-   Energy loss rate     δ·T = 0.0005
+   Dispersion length    L_D = 6.196
+   Nonlinear length     L_NL = 2.742
+   Soliton order        N = sqrt(L_D/L_NL) = 1.50
+   Dissipation time     τ_δ = 499750.1 (vs T_sim=12)
+   Energy loss rate     δ·T = 0.0000
 
 Physical Regime Analysis:
-   ✓ Weak dissipation regime (δ·T = 0.0005 << 1)
-   ⚠️ Significant frequency offset (ω₀ = 0.388)
+   [OK] Weak dissipation regime (δ·T = 0.0000 << 1)
+   [WARNING] Significant frequency offset (ω₀ = -0.400)
 ================================================================================
-🏆 9D OPTIMIZATION SUMMARY (seed=42)
+[SUMMARY] 9D OPTIMIZATION SUMMARY (seed=42)
 ================================================================================
 Algorithm Performance Ranking:
-   1st - BO: 0.4849
+   1st - BO: 0.3993
    2st - CMA-ES: 0.2845
-   3st - TPE: 0.2611
-   4st - Random: 0.2310
+   3st - Random: 0.2310
+   4st - TPE: 0.1765
 
 Mass Conservation Verification (BO best params):
-   Max relative error:  2.47e-04
-   Mean relative error: 1.24e-04
-   Final mass ratio:    0.999753
+   Max relative error:  8.49e-06
+   Mean relative error: 4.24e-06
+   Final mass ratio:    0.999992
 
 Energy Loss Summary:
-   BO      : Avg Energy Loss Rate = 0.0319
+   BO      : Avg Energy Loss Rate = 0.0321
    CMA-ES  : Avg Energy Loss Rate = 0.0080
-   TPE     : Avg Energy Loss Rate = 0.0082
+   TPE     : Avg Energy Loss Rate = 0.0169
    Random  : Avg Energy Loss Rate = 0.0467
 
 Computational Efficiency:
-   BO     : 84.05s
-   CMAES  : 246.41s
-   TPE    : 29.83s
-   RANDOM : 34.06s
+   BO     : 83.14s
+   CMAES  : 233.32s
+   TPE    : 27.74s
+   RANDOM : 26.68s
 
-🔍 Performing 9D → 2D Dimension Reduction (PCA + t-SNE)...
-   ✓ BO: 9D → 2D (PCA explained variance: 0.983)
-   ✓ CMAES: 9D → 2D (PCA explained variance: 0.972)
-   ✓ TPE: 9D → 2D (PCA explained variance: 0.979)
-   ✓ RANDOM: 9D → 2D (PCA explained variance: 0.978)
-✨ Saved PNG format: figures_9D/9D_Energy_Loss_Analysis.png
-✨ Saved PDF format: figures_9D/9D_Energy_Loss_Analysis.pdf
-✨ Saved PNG format: figures_9D/9D_NLSE_Optimization_Results.png
-✨ Saved PDF format: figures_9D/9D_NLSE_Optimization_Results.pdf
-✨ Saved PNG format: figures_9D/9D_Landscape_Comparison.png
-✨ Saved PDF format: figures_9D/9D_Landscape_Comparison.pdf
-✨ Saved PNG format: figures_9D/9D_Raincloud_Statistics.png
-✨ Saved PDF format: figures_9D/9D_Raincloud_Statistics.pdf
-✨ Saved PNG format: figures_9D/9D_BO_Uncertainty.png
-✨ Saved PDF format: figures_9D/9D_BO_Uncertainty.pdf
+🔍 Performing 9D -> 2D Dimension Reduction (PCA + t-SNE)...
+   [OK] BO: 9D -> 2D (PCA explained variance: 0.981)
+   [OK] CMAES: 9D -> 2D (PCA explained variance: 0.972)
+   [OK] TPE: 9D -> 2D (PCA explained variance: 0.984)
+   [OK] RANDOM: 9D -> 2D (PCA explained variance: 0.978)
+[SAVED] Saved PNG format: figures_9D/9D_Energy_Loss_Analysis.png
+[SAVED] Saved PDF format: figures_9D/9D_Energy_Loss_Analysis.pdf
+[SAVED] Saved PNG format: figures_9D/9D_NLSE_Optimization_Results.png
+[SAVED] Saved PDF format: figures_9D/9D_NLSE_Optimization_Results.pdf
+[SAVED] Saved PNG format: figures_9D/9D_Landscape_Comparison.png
+[SAVED] Saved PDF format: figures_9D/9D_Landscape_Comparison.pdf
+[SAVED] Saved PNG format: figures_9D/9D_Raincloud_Statistics.png
+[SAVED] Saved PDF format: figures_9D/9D_Raincloud_Statistics.pdf
+[SAVED] Saved PNG format: figures_9D/9D_BO_Uncertainty.png
+[SAVED] Saved PDF format: figures_9D/9D_BO_Uncertainty.pdf
 ================================================================================
-✨ 9D Optimization Complete! (Plots saved as PNG files)
+[SAVED] 9D Optimization Complete! (Plots saved as PNG files)
 ================================================================================
 
 进程已结束，退出代码为 0
