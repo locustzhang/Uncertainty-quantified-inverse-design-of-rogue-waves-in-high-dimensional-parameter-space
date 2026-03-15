@@ -1,0 +1,170 @@
+C:\Users\xyh\anaconda3\envs\hologpu\python.exe E:\DymicModel\AI怪波碰撞\nlse_9d_cqnlse_SCI.py 
+================================================================================
+6D CQ-NLSE Optimization (seed=42, max_iter=100)
+Equation: i d_z psi - (beta2/2) d_tau^2 psi + gamma|psi|^2 psi + alpha|psi|^4 psi = 0
+gamma=1.0 (fixed),  conservative system (no dissipation)
+================================================================================
+------------------------------------------------------------
+Starting 6D Bayesian Optimization (max_iter=100)
+  Equation: i d_z psi - (beta2/2) d_tau^2 psi + gamma|psi|^2 psi + alpha|psi|^4 psi = 0
+  Bounds: A_mod(0.2, 2.5), f_mod(0.05, 0.7), phi0(0.0, 6.283185307179586), alpha(0.0, 0.5), beta2(-2.8, -0.3), sigma(5.0, 30.0)
+  [OK] GP uncertainty extracted for (A_mod, f_mod) slice
+  [OK] Fixed: phi0=5.62, alpha=0.229, beta2=-2.46, sigma=5.00
+[BO] Iter  10/100 | Progress:  10.0% | Current Score:   0.0254 | Best Score:   0.0873 | Params (A,f,phi,alpha,beta2,sigma): ( 1.873,  0.262,  3.584,  0.260, -0.397, 26.113)
+      -> Power Error: 1.34e-13  C=3.936  N=54.88
+[BO] Iter  20/100 | Progress:  20.0% | Current Score:   0.0501 | Best Score:   0.0873 | Params (A,f,phi,alpha,beta2,sigma): ( 0.443,  0.347,  1.373,  0.208, -0.592, 13.109)
+      -> Power Error: 1.90e-13  C=0.125  N=5.33
+[BO] Iter  30/100 | Progress:  30.0% | Current Score:   0.1855 | Best Score:   0.7416 | Params (A,f,phi,alpha,beta2,sigma): ( 0.394,  0.066,  5.850,  0.433, -2.494, 13.238)
+      -> Power Error: 1.62e-13  C=0.438  N=2.33
+[BO] Iter  40/100 | Progress:  40.0% | Current Score:   0.5735 | Best Score:   1.3009 | Params (A,f,phi,alpha,beta2,sigma): ( 0.409,  0.603,  2.357,  0.185, -2.502,  5.787)
+      -> Power Error: 1.64e-13  C=0.444  N=1.06
+[BO] Iter  50/100 | Progress:  50.0% | Current Score:   0.0221 | Best Score:   1.3488 | Params (A,f,phi,alpha,beta2,sigma): ( 2.482,  0.464,  4.162,  0.080, -0.309, 29.552)
+      -> Power Error: 1.72e-13  C=3.787  N=93.29
+[BO] Iter  60/100 | Progress:  60.0% | Current Score:   0.1179 | Best Score:   1.3488 | Params (A,f,phi,alpha,beta2,sigma): ( 2.141,  0.684,  0.526,  0.051, -2.404,  5.109)
+      -> Power Error: 1.70e-13  C=16.194  N=4.99
+[BO] Iter  70/100 | Progress:  70.0% | Current Score:   0.0000 | Best Score:   1.4722 | Params (A,f,phi,alpha,beta2,sigma): ( 0.212,  0.116,  6.004,  0.370, -0.839,  5.005)
+      -> Power Error: 1.19e-13  C=0.039  N=0.82
+[BO] Iter  80/100 | Progress:  80.0% | Current Score:   0.0133 | Best Score:   1.4722 | Params (A,f,phi,alpha,beta2,sigma): ( 0.211,  0.595,  0.074,  0.423, -0.395, 28.891)
+      -> Power Error: 1.47e-13  C=0.018  N=6.85
+[BO] Iter  90/100 | Progress:  90.0% | Current Score:   1.4001 | Best Score:   1.4722 | Params (A,f,phi,alpha,beta2,sigma): ( 0.710,  0.644,  5.815,  0.200, -2.451,  5.089)
+      -> Power Error: 1.05e-13  C=1.484  N=1.63
+[BO] Iter 100/100 | Progress: 100.0% | Current Score:   1.3116 | Best Score:   1.4722 | Params (A,f,phi,alpha,beta2,sigma): ( 0.685,  0.686,  5.462,  0.254, -2.243,  5.000)
+      -> Power Error: 1.00e-13  C=1.305  N=1.62
+BO Completed | Best Score: 1.4722 | A=0.685, f=0.700, phi=5.622, alpha=0.229, beta2=-2.461, sigma=5.00
+  -> Mean Power Error: 1.47e-13 (machine eps expected)
+  -> GP Uncertainty: mean_sigma=0.377, max_sigma=0.377
+------------------------------------------------------------
+Starting 6D CMA-ES (max_iter=100)
+[CMAES] Iter  10/100 | Progress:  10.0% | Current Score:   0.1703 | Best Score:   0.1703 | Params (A,f,phi,alpha,beta2,sigma): ( 0.528,  0.516,  3.612,  0.085, -1.493, 10.172)
+      CMA-ES: sigma=0.1628, cond(C)=1.1e+01
+      -> Power Error: 1.48e-13  C=0.436  N=3.11
+[CMAES] Iter  20/100 | Progress:  20.0% | Current Score:   1.1882 | Best Score:   1.1882 | Params (A,f,phi,alpha,beta2,sigma): ( 0.334,  0.495,  4.223,  0.113, -2.069,  9.623)
+      CMA-ES: sigma=0.1970, cond(C)=9.2e+00
+      -> Power Error: 1.62e-13  C=0.237  N=1.58
+[CMAES] Iter  30/100 | Progress:  30.0% | Current Score:   1.2402 | Best Score:   1.2402 | Params (A,f,phi,alpha,beta2,sigma): ( 0.329,  0.387,  4.900,  0.060, -2.009,  9.339)
+      CMA-ES: sigma=0.1549, cond(C)=3.4e+01
+      -> Power Error: 1.35e-13  C=0.220  N=1.53
+[CMAES] Iter  40/100 | Progress:  40.0% | Current Score:   1.2990 | Best Score:   1.2990 | Params (A,f,phi,alpha,beta2,sigma): ( 0.300,  0.271,  4.456,  0.042, -1.766,  9.486)
+      CMA-ES: sigma=0.1570, cond(C)=8.9e+01
+      -> Power Error: 1.36e-13  C=0.160  N=1.52
+[CMAES] Iter  50/100 | Progress:  50.0% | Current Score:   1.3036 | Best Score:   1.3036 | Params (A,f,phi,alpha,beta2,sigma): ( 0.328,  0.249,  4.655,  0.055, -1.984,  9.178)
+      CMA-ES: sigma=0.1123, cond(C)=1.3e+02
+      -> Power Error: 1.53e-13  C=0.217  N=1.51
+[CMAES] Iter  60/100 | Progress:  60.0% | Current Score:   1.4011 | Best Score:   1.4011 | Params (A,f,phi,alpha,beta2,sigma): ( 0.349,  0.226,  4.805,  0.048, -2.068,  9.019)
+      CMA-ES: sigma=0.0830, cond(C)=5.9e+02
+      -> Power Error: 1.60e-13  C=0.256  N=1.55
+[CMAES] Iter  70/100 | Progress:  70.0% | Current Score:   1.4078 | Best Score:   1.4078 | Params (A,f,phi,alpha,beta2,sigma): ( 0.371,  0.294,  5.110,  0.064, -2.179,  8.792)
+      CMA-ES: sigma=0.0968, cond(C)=2.3e+03
+      -> Power Error: 1.42e-13  C=0.305  N=1.56
+[CMAES] Iter  80/100 | Progress:  80.0% | Current Score:   1.4812 | Best Score:   1.4812 | Params (A,f,phi,alpha,beta2,sigma): ( 0.390,  0.315,  5.471,  0.073, -2.289,  8.401)
+      CMA-ES: sigma=0.0959, cond(C)=5.0e+03
+      -> Power Error: 1.23e-13  C=0.356  N=1.53
+[CMAES] Iter  90/100 | Progress:  90.0% | Current Score:   1.4910 | Best Score:   1.4910 | Params (A,f,phi,alpha,beta2,sigma): ( 0.420,  0.392,  5.811,  0.086, -2.421,  7.957)
+      CMA-ES: sigma=0.0836, cond(C)=1.1e+04
+      -> Power Error: 9.80e-14  C=0.441  N=1.52
+[CMAES] Iter 100/100 | Progress: 100.0% | Current Score:   1.5705 | Best Score:   1.5705 | Params (A,f,phi,alpha,beta2,sigma): ( 0.390,  0.350,  5.779,  0.061, -2.241,  8.218)
+      CMA-ES: sigma=0.1302, cond(C)=1.6e+04
+      -> Power Error: 9.11e-14  C=0.347  N=1.51
+CMA-ES Completed | Best Score: 1.5705 | A=0.390, f=0.350, phi=5.779, alpha=0.061, beta2=-2.241, sigma=8.22
+  -> Mean Power Error: 1.38e-13
+------------------------------------------------------------
+Starting 6D TPE (max_iter=100)
+[TPE] Iter  10/100 | Progress:  10.0% | Current Score:   0.0606 | Best Score:   1.0885 | Params (A,f,phi,alpha,beta2,sigma): ( 1.161,  0.395,  1.348,  0.299, -2.210,  7.128)
+      -> Power Error: 1.64e-13  C=5.382  N=3.94
+[TPE] Iter  20/100 | Progress:  20.0% | Current Score:   0.0234 | Best Score:   1.0885 | Params (A,f,phi,alpha,beta2,sigma): ( 2.448,  0.592,  3.613,  0.206, -2.288, 26.995)
+      -> Power Error: 1.47e-13  C=47.518  N=30.89
+[TPE] Iter  30/100 | Progress:  30.0% | Current Score:   0.0499 | Best Score:   1.0885 | Params (A,f,phi,alpha,beta2,sigma): ( 0.473,  0.205,  0.057,  0.142, -2.591, 22.205)
+      -> Power Error: 1.44e-13  C=0.617  N=4.62
+[TPE] Iter  40/100 | Progress:  40.0% | Current Score:   0.0538 | Best Score:   1.0885 | Params (A,f,phi,alpha,beta2,sigma): ( 1.686,  0.418,  1.645,  0.189, -1.146, 15.832)
+      -> Power Error: 1.48e-13  C=6.757  N=17.63
+[TPE] Iter  50/100 | Progress:  50.0% | Current Score:   0.0706 | Best Score:   1.0885 | Params (A,f,phi,alpha,beta2,sigma): ( 1.170,  0.575,  5.317,  0.467, -0.799, 10.989)
+      -> Power Error: 1.60e-13  C=2.493  N=10.17
+[TPE] Iter  60/100 | Progress:  60.0% | Current Score:   0.0356 | Best Score:   1.0885 | Params (A,f,phi,alpha,beta2,sigma): ( 0.806,  0.225,  4.198,  0.340, -1.205, 21.037)
+      -> Power Error: 1.53e-13  C=1.128  N=10.92
+[TPE] Iter  70/100 | Progress:  70.0% | Current Score:   0.3372 | Best Score:   1.0885 | Params (A,f,phi,alpha,beta2,sigma): ( 0.322,  0.244,  1.459,  0.312, -2.245,  7.705)
+      -> Power Error: 1.27e-13  C=0.249  N=1.17
+[TPE] Iter  80/100 | Progress:  80.0% | Current Score:   0.0925 | Best Score:   1.0885 | Params (A,f,phi,alpha,beta2,sigma): ( 0.976,  0.083,  2.291,  0.285, -2.670,  7.351)
+      -> Power Error: 2.01e-13  C=3.921  N=3.10
+[TPE] Iter  90/100 | Progress:  90.0% | Current Score:   0.5579 | Best Score:   1.1489 | Params (A,f,phi,alpha,beta2,sigma): ( 0.243,  0.491,  1.034,  0.153, -2.061, 14.954)
+      -> Power Error: 1.83e-13  C=0.124  N=1.79
+[TPE] Iter 100/100 | Progress: 100.0% | Current Score:   0.0626 | Best Score:   1.1489 | Params (A,f,phi,alpha,beta2,sigma): ( 0.964,  0.586,  1.363,  0.087, -0.332,  7.392)
+      -> Power Error: 1.58e-13  C=0.358  N=8.75
+TPE Completed | Best Score: 1.1489 | A=0.266, f=0.314, phi=1.100, alpha=0.125, beta2=-2.558, sigma=6.48
+  -> Mean Power Error: 1.57e-13
+------------------------------------------------------------
+Starting 6D Random Search (max_iter=100)
+[RANDOM] Iter  10/100 | Progress:  10.0% | Current Score:   0.0584 | Best Score:   0.7940 | Params (A,f,phi,alpha,beta2,sigma): ( 1.975,  0.634,  2.097,  0.496, -2.543,  6.324)
+      -> Power Error: 1.63e-13  C=48.315  N=5.54
+[RANDOM] Iter  20/100 | Progress:  20.0% | Current Score:   0.0257 | Best Score:   1.1320 | Params (A,f,phi,alpha,beta2,sigma): ( 1.329,  0.439,  0.601,  0.191, -0.439, 19.738)
+      -> Power Error: 1.91e-13  C=1.302  N=27.99
+[RANDOM] Iter  30/100 | Progress:  30.0% | Current Score:   0.0445 | Best Score:   1.1320 | Params (A,f,phi,alpha,beta2,sigma): ( 2.066,  0.553,  0.913,  0.232, -0.863, 13.433)
+      -> Power Error: 1.62e-13  C=10.969  N=21.12
+[RANDOM] Iter  40/100 | Progress:  40.0% | Current Score:   0.0354 | Best Score:   1.1320 | Params (A,f,phi,alpha,beta2,sigma): ( 0.458,  0.423,  4.907,  0.183, -0.355, 15.861)
+      -> Power Error: 1.64e-13  C=0.080  N=8.62
+[RANDOM] Iter  50/100 | Progress:  50.0% | Current Score:   0.0408 | Best Score:   1.1320 | Params (A,f,phi,alpha,beta2,sigma): ( 0.689,  0.293,  1.710,  0.044, -0.725, 26.328)
+      -> Power Error: 1.13e-13  C=0.358  N=15.07
+[RANDOM] Iter  60/100 | Progress:  60.0% | Current Score:   0.0558 | Best Score:   1.1320 | Params (A,f,phi,alpha,beta2,sigma): ( 1.722,  0.519,  1.604,  0.045, -2.603, 15.654)
+      -> Power Error: 1.38e-13  C=9.763  N=11.81
+[RANDOM] Iter  70/100 | Progress:  70.0% | Current Score:   0.0328 | Best Score:   1.1320 | Params (A,f,phi,alpha,beta2,sigma): ( 1.800,  0.335,  3.470,  0.279, -2.107, 16.897)
+      -> Power Error: 1.60e-13  C=19.143  N=14.81
+[RANDOM] Iter  80/100 | Progress:  80.0% | Current Score:   0.0647 | Best Score:   1.1320 | Params (A,f,phi,alpha,beta2,sigma): ( 1.893,  0.055,  3.388,  0.397, -2.134, 20.082)
+      -> Power Error: 1.68e-13  C=29.392  N=18.40
+[RANDOM] Iter  90/100 | Progress:  90.0% | Current Score:   1.1251 | Best Score:   1.1320 | Params (A,f,phi,alpha,beta2,sigma): ( 0.366,  0.533,  4.473,  0.029, -1.399,  7.117)
+      -> Power Error: 9.69e-14  C=0.189  N=1.56
+[RANDOM] Iter 100/100 | Progress: 100.0% | Current Score:   0.0240 | Best Score:   1.1320 | Params (A,f,phi,alpha,beta2,sigma): ( 0.610,  0.651,  4.790,  0.241, -1.100, 27.432)
+      -> Power Error: 1.51e-13  C=0.483  N=11.28
+Random Completed | Best Score: 1.1320 | A=0.871, f=0.547, phi=4.800, alpha=0.146, beta2=-2.597, sigma=5.29
+  -> Mean Power Error: 1.50e-13
+================================================================================
+[PHYSICS] 6D CQ-NLSE PARAMETER INTERPRETATION
+================================================================================
+Optimal 6D Parameters (BO best):
+  A_mod  = 0.685   modulation amplitude
+  f_mod  = 0.700   modulation frequency (= q_peak seed)
+  phi0   = 5.622   initial phase
+  alpha  = 0.2292  quintic nonlinearity coefficient
+  beta2  = -2.461   group-velocity dispersion (anomalous: beta2<0)
+  sigma  = 5.00   Gaussian envelope width
+  gamma  = 1.0    cubic nonlinearity (fixed)
+
+Derived MI quantities:
+  C (MI gain)      = 1.4043
+  q_peak           = 0.6811
+  lambda_max       = 0.5707
+  L_D (dispersion) = 5.0800
+  L_NL (nonlinear) = 2.1294
+  N (soliton order)= 1.545
+  Power error      = 1.70e-13  (machine eps expected)
+
+Algorithm Ranking:
+  1. CMA-ES: 1.5705
+  2. BO: 1.4722
+  3. TPE: 1.1489
+  4. Random: 1.1320
+
+Computational Time:
+  BO    : 41.50s
+  CMAES : 84.02s
+  TPE   : 10.47s
+  RANDOM: 9.87s
+
+Performing 6D -> 2D Dimension Reduction (PCA + t-SNE)...
+  [OK] BO: 6D->2D (PCA explained var: 0.987)
+  [OK] CMAES: 6D->2D (PCA explained var: 0.977)
+  [OK] TPE: 6D->2D (PCA explained var: 0.985)
+  [OK] RANDOM: 6D->2D (PCA explained var: 0.985)
+[SAVED] figures_6D/6D_Power_Conservation.png
+[SAVED] figures_6D/6D_Power_Conservation.pdf
+[SAVED] figures_6D/6D_NLSE_Optimization_Results.png
+[SAVED] figures_6D/6D_NLSE_Optimization_Results.pdf
+[SAVED] figures_6D/6D_Landscape_Comparison.png
+[SAVED] figures_6D/6D_Landscape_Comparison.pdf
+[SAVED] figures_6D/6D_Raincloud_Statistics.png
+[SAVED] figures_6D/6D_Raincloud_Statistics.pdf
+[SAVED] figures_6D/6D_BO_Uncertainty.png
+[SAVED] figures_6D/6D_BO_Uncertainty.pdf
+================================================================================
+[DONE] 6D CQ-NLSE Optimization Complete!
+================================================================================
+
+进程已结束，退出代码为 0
